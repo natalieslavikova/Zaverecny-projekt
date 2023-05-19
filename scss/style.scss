@@ -1,104 +1,77 @@
-$primary-color: #FDD8C4;
+@use 'layout/header';
 
-$font-base: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-$font-special: Georgia, serif;
+@use 'barvy';
 
-$spacer: 30px;
+@use 'layout/footer';
+
+@use 'pages/masaze';
+
+@use 'pages/cenik';
+
+@use 'pages/kontakt';
+
+@use 'pages/lymfa';
+
+@use 'components/buttons';
+
+$font-base: 'Nunito', sans-serif;
+$font-special: 'Plus Jakarta Sans', sans-serif;
 
 
-body {
-    font-family: $font-base;
-  
-    
-}
 
-.header {
+
+  body {
+      font-family: $font-base;
+      margin: 20px;
+      color: barvy.$font-color;
+  }
+
+ 
+
+  .text-induction {
     text-align: center;
-    font-size: 12px;
-}
-
-a {
-	display: block;
-	padding: 5px 15px;
-	color: black;
-	text-decoration: none;
-    background-color: #E2763C;
-    margin: 5px;
-    border-radius: 8px;
-   
-}
-
-a:hover {
-	background-color: #E2763C;
-	color: white;
-}
-
-
-.menu {
-margin: 0;
-padding: 0;
-list-style: none;
-font-weight: bold;
-}
-
-.logo {
-  max-width: 70%;
-    margin: auto;
-
-}
-
-.banner {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 100%;
-    margin-top: 10px;
-
-}
-
-.info {
-    background-color: $primary-color;
-    padding: 10px;
+    background-color: barvy.$primary-color;
+    padding: 20px;
     margin: 0;
-    text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .image-induction {
+    max-width: 100%;
+    background-color: barvy.$secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-induction img {
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 15%;
+  }
+
+@media screen and (min-width: 640px){
+.induction {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-
-
-
-
-/* pc verze
-
-
-
-.header {
-	background-color: $primary-color;
-	
+.wrapper {
+  padding: 0 5px;
 }
 
-a {
-	display: block;
-	padding: 5px 15px;
-	color: black;
-	text-decoration: none;
+.image-induction {
+  background-color: barvy.$primary-color; 
+}
+.text-induction {
+  font-size: 16px;
 }
 
-a:hover {
-	background-color: white;
-	color: #3498db;
 }
 
+@media screen and (min-width: 940px){
+  .text-induction {
+    font-size: 20px;
+  }
 
-
-.header{display: flex;
-	justify-content: space-between;
-align-items: center;}
-
-.menu{margin: 0;
-padding: 0;
-display: flex;
-list-style: none ;}
-
-.logo {
-    width: 300px;
-}*/
+}

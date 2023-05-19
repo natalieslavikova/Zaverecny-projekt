@@ -7,9 +7,13 @@
 
 	<!-- Náš vlastní styl -->
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
 </head>
 <body>
+	<div class="wrapper">
 
 	<header class="header">
 
@@ -18,32 +22,68 @@
         </div>
 
 		<ul class="menu">
-            <li><a href="#">ÚVOD</a></li>
-            <li><a href="#">O MNĚ</a></li>
-            <li><a href="#">MASÁŽE</a></li>
-            <li><a href="#">CENÍK</a></li>
-			<li><a href="#">KONTAKT</a></li>
+			<li><a href="/" class="uvod">ÚVOD</a></li>
+            <li><a href="/masaze/" class="masaze">MASÁŽE</a></li>
+            <li><a href="/cenik/" class="cenik">CENÍK</a></li>
+			<li><a href="/kontakt/" class="kontakt">KONTAKT</a></li>
         </ul>
 
 		</header>
 
 	<main class="main">
 		<div class="banner">
-			<img class="banner" src="/images/banner.jpg" alt="Banner">
+			<img class="banner-image" src="/images/banner.png" alt="Banner">
+			</div>
+		
+
+		
+
+		<div class="induction">
+			<div class="text-induction">
+			<p>Vítejte na mé webové stránce.</p>	
+			<p>Jmenuji se Bc. Natálie Slavíková a ráda se Vám budu věnovat v naší masérně v rodinném domě. 
+				Můžete si vybrat lymfatickou masáž, tu oceňují především dámy před plavkovou sezónou, těhotenskou masáž, 
+				která mimo jiné tlumí budoucím maminkám bolesti zad nebo sportovní masáž, která odstraňuje únavu po tréninku.
+			</p>	
+
+			<p>Na stránce Masáže se o masážích dočtete vše, co Vás zajímá. Pokud budete mít jakýkoli dotaz, neváhejte mě kontaktovat.
+				 Potom už jen stačí si rozmyslet, jaká masáž bude přesně pro Vás</p>	
 		</div>
 
-		<div class="info">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eius maiores eveniet aspernatur saepe praesentium hic deserunt, 
-				perspiciatis laborum optio quod adipisci nostrum fugit, nihil vero porro officiis totam minus. Temporibus eius maiores eveniet aspernatur saepe praesentium hic deserunt, 
-				perspiciatis laborum optio quod adipisci nostrum fugit, nihil vero porro officiis totam minus.</p>	
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eius maiores eveniet aspernatur saepe praesentium hic deserunt, 
-					perspiciatis laborum optio quod adipisci nostrum fugit, nihil vero porro officiis totam minus. Temporibus eius maiores eveniet aspernatur saepe praesentium hic deserunt, 
-					perspiciatis laborum optio quod adipisci nostrum fugit, nihil vero porro officiis totam minus.</p>	
+		<div class="image-induction">
+			<img src="/images/nat.jpg" alt="Natalie" class="image-induction">
+		  </div>
 		</div>
+
+		<footer class="footer">
+			<div class="social">
+				<a href="https://www.facebook.com/">
+				<img class="social" src="/images/facebook.png" alt="Facebook">
+			</a>
+			
+	
+			<div class="social-second">
+				<a href="https://www.instagram.com/">
+				<img class="social" src="/images/instagram.png" alt="Instagram">
+			</a>
+		</div>
+	
+			<div class="social-second">
+				<a href="https://cz.linkedin.com/">
+				<img class="social" src="/images/linked-in.png" alt="Linkedin">
+			</a>
+		</div>
+	
+			
+				<a href="https://twitter.com/">
+				<img class="social" src="/images/twitter.png" alt="twitter">
+			</a>
+			</div>
+			&copy;2023, Natálie Slavíková
+		</footer>
 	
 		</main>
 
-    
+    </div>
 </body>
 </html>

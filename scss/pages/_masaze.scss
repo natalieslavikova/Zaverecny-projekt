@@ -1,0 +1,102 @@
+@use '../barvy';
+
+$font-base: 'Nunito', sans-serif;
+$font-special: 'Plus Jakarta Sans', sans-serif;
+
+.masage-photo {
+    max-width: 50%;
+    margin: auto;
+   padding: 20px;
+   border-radius: 8px;
+   padding-bottom: 0;
+}
+
+.masage-photo2 {
+    max-width: 30%;
+    margin: auto;
+   padding: 20px;
+   padding-bottom: 0;
+}
+
+.massage {
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    gap: 10px;
+    background-color: barvy.$primary-color;
+}
+
+.massage2 {
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    gap: 10px;
+    background-color: barvy.$secondary-color;
+}
+
+.text {
+    padding: 20px;
+    padding-top: 0;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 14px;
+    color: barvy.$font-color;
+}
+
+.button {
+    font-size: 12px;
+
+    }
+
+@media screen and (min-width: 640px){
+    .massage {
+        grid-template-columns: 1fr 2fr;
+        }
+
+    .massage2 {
+        grid-template-columns: 2fr 1fr;
+        }
+
+    .square.first { 
+        grid-column: 2;
+        grid-row: 1;
+        margin: auto;
+        }
+    
+    .square.second { 
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .masage-photo {
+            max-width: 100%;
+            padding: 20px;
+        }
+        
+        .masage-photo2 {
+            max-width: 80%;
+            padding: 20px;
+        }
+
+        .text {
+    
+            font-size: 16px;
+            
+        }
+  
+}
+
+@media screen and (min-width: 940px){
+    
+    .masage-photo {
+        max-width: 400px;
+      }
+
+    .masage-photo2 {
+        max-width: 350px;
+      }
+
+      .text {
+        font-size: 18px;
+      }
+    }

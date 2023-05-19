@@ -1,0 +1,13 @@
+@use '../barvy';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    background-color: barvy.$footer-color;
+    color: barvy.$font-color;
+    font-size: 14px;
+    gap: 10px
+  }

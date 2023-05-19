@@ -1,0 +1,16 @@
+@use '../barvy';
+
+.button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    align-items: center;
+    color: barvy.$primary-color;
+    background-color: barvy.$menu-color;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 5px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    }

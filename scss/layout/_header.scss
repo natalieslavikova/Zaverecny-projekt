@@ -1,0 +1,137 @@
+@use '../barvy';
+
+
+$font-base: 'Nunito', sans-serif;
+$font-special: 'Plus Jakarta Sans', sans-serif;
+
+.logo {
+    padding-top: 10px;
+    width: 150px;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  body {
+    font-family: $font-base;
+    margin: 20px;
+}
+  
+  .header {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+    background-color: barvy.$footer-color;
+    text-align: center;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-family: $font-base; 
+  }
+  
+  .menu a {
+    display: block;
+    padding: 5px 15px;
+    color: barvy.$primary-color;
+    text-decoration: none;
+    background-color: barvy.$menu-color;
+    border-radius: 8px;
+    width: 100px;
+  }
+  
+  .menu a:hover {
+    background-color: #fbbe9d;
+    color: white;
+  }
+  
+  ul {
+    padding: 0;
+    gap: 10px;
+  }
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    
+    background-color: barvy.$footer-color; ;
+  }
+
+
+  .banner-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    font-size: 5vw;
+    font-weight: bolder;
+    color: barvy.$secondary-color; 
+    margin-bottom: 4vw;
+    letter-spacing: 1px;
+  }
+
+  .title::after {
+      content:  "";
+      display: block;
+      width: 60%;
+      height: 5px;
+      background-image: linear-gradient(to right,#5A270C, #c34908,  #FFEEF5);
+      margin-left: -20px;
+      border-radius: 5px;
+    }
+
+
+@media screen and (min-width: 640px){
+    .header {
+        display: flex;
+        justify-content: space-between;
+        }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 20px;
+        }
+
+    .logo {
+        margin-left: 20px;
+        }
+
+    .menu a {
+        padding: 10px 5px;
+            }
+
+    ul {
+        
+        gap: 10px;
+              }
+    }
+
+@media screen and (min-width: 940px){
+    .header {
+        align-items: center
+        }
+            
+    .menu {
+         grid-template-columns: repeat(4, 1fr);
+        }
+
+    .menu a {
+        padding: 15px 10px;
+         }
+        }

@@ -1,0 +1,86 @@
+@use '../barvy';
+
+  .tariff,
+  .tariff2,
+  .tariff3 {
+    display: grid;
+    gap: 10px;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+  }
+
+  .tariff {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(7, 50px);
+    background-color: barvy.$primary-color;
+  }
+
+  .tariff2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(3, 50px);
+    background-color: barvy.$secondary-color;
+  }
+
+  .tariff3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 50px);
+    background-color: barvy.$primary-color;
+  }
+  
+  .tariff-column {
+    padding: 10px;
+  }
+  
+  .lymph,
+  .lymph2,
+  .lymph3 {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  }
+
+  .letterhead {
+    font-weight: bold;
+  }
+ 
+  @media screen and (min-width: 640px){
+    .tariff {
+        grid-template-columns: 1fr 1.5fr 1fr 1fr;
+        grid-template-rows: repeat(6, 40px);
+      }
+    
+      .tariff2 {
+        grid-template-columns: 1fr 1.5fr 1fr 1fr;
+        grid-template-rows: repeat(2, 40px);
+      }
+    
+      .tariff3 {
+        grid-template-columns: 1fr 1.5fr 1fr 1fr;
+        grid-template-rows: repeat(7, 40px);
+      }
+      
+      .lymph {
+        grid-row: 1 / span 6;
+        grid-column: 1;
+      }
+    
+      .lymph2 {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+      }
+    
+      .lymph3 {
+        grid-row: 1 / span 8;
+        grid-column: 1;
+      }
+    
+    
+    }
+    

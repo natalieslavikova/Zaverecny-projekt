@@ -1,0 +1,87 @@
+@use '../barvy';
+
+.massage-text {
+    margin: 30px;
+    
+}
+
+.massage-text p {
+    line-height: 1.5; 
+    margin-top: 5px;
+}
+
+.massage-item p {
+margin: 5px;
+}
+
+.massage-grid {
+    text-align: center;
+    background-color: barvy.$secondary-color;
+    line-height: 1.5; 
+    padding: 20px;
+  }
+  
+  .massage-information {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .massage-information li {
+   margin: 5px
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+ 
+  .massage-photo {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .massage-notice {
+    background-color: barvy.$primary-color;
+    margin: 10;
+    text-align: center;
+  }
+
+  .massage-notice p {
+    margin: 0;
+    padding: 20px
+  }
+
+  
+@media screen and (min-width: 640px){
+    .massage-photo {
+        max-width: 40%;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        float: left;
+      }
+    
+      .massage-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+      }
+
+      
+  h3 {
+    font-size: 20px;
+  }
+
+  .massage-info {
+    font-size: 20px
+   }
+   
+    }
+    
+    @media screen and (min-width: 940px){
+    
+    
+    }
+    
+  
