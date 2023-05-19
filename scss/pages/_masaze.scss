@@ -6,16 +6,16 @@ $font-special: 'Plus Jakarta Sans', sans-serif;
 .masage-photo {
     max-width: 50%;
     margin: auto;
-   padding: 20px;
-   border-radius: 8px;
-   padding-bottom: 0;
+    padding: 20px;
+    border-radius: 8px;
+    padding-bottom: 0;
 }
 
 .masage-photo2 {
     max-width: 30%;
     margin: auto;
-   padding: 20px;
-   padding-bottom: 0;
+    padding: 20px;
+    padding-bottom: 0;
 }
 
 .massage {
@@ -45,7 +45,6 @@ $font-special: 'Plus Jakarta Sans', sans-serif;
 
 .button {
     font-size: 12px;
-
     }
 
 @media screen and (min-width: 640px){
@@ -64,26 +63,23 @@ $font-special: 'Plus Jakarta Sans', sans-serif;
         }
     
     .square.second { 
-            grid-column: 1;
-            grid-row: 1;
+        grid-column: 1;
+        grid-row: 1;
         }
 
-        .masage-photo {
-            max-width: 100%;
-            padding: 20px;
+    .masage-photo {
+        max-width: 100%;
+        padding: 20px;
         }
         
-        .masage-photo2 {
-            max-width: 80%;
-            padding: 20px;
+    .masage-photo2 {
+        max-width: 80%;
+        padding: 20px;
         }
 
-        .text {
-    
-            font-size: 16px;
-            
+    .text {
+        font-size: 16px;
         }
-  
 }
 
 @media screen and (min-width: 940px){

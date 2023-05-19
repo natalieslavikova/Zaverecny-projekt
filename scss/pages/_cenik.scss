@@ -9,7 +9,6 @@
     text-align: left;
     padding-top: 20px;
     padding-bottom: 20px;
-    
   }
 
   .tariff {
@@ -80,7 +79,14 @@
         grid-row: 1 / span 8;
         grid-column: 1;
       }
-    
-    
     }
     
+     
+  @media screen and (min-width: 940px){
+    .tariff,
+    .tariff2,
+    .tariff3 {
+      font-size: 18px;
+    }
+
+}

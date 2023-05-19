@@ -288,6 +288,13 @@ ul {
     grid-column: 1;
   }
 }
+@media screen and (min-width: 940px) {
+  .tariff,
+  .tariff2,
+  .tariff3 {
+    font-size: 18px;
+  }
+}
 .social {
   display: flex;
 }

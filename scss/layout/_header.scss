@@ -4,7 +4,7 @@
 $font-base: 'Nunito', sans-serif;
 $font-special: 'Plus Jakarta Sans', sans-serif;
 
-.logo {
+  .logo {
     padding-top: 10px;
     width: 150px;
     max-width: 100%;
@@ -14,7 +14,7 @@ $font-special: 'Plus Jakarta Sans', sans-serif;
   body {
     font-family: $font-base;
     margin: 20px;
-}
+  }
   
   .header {
     text-align: center;
@@ -59,14 +59,12 @@ $font-special: 'Plus Jakarta Sans', sans-serif;
     gap: 10px;
   }
 
-.banner {
+  .banner {
     position: relative;
     width: 100%;
     max-width: 100%;
-    
     background-color: barvy.$footer-color; ;
   }
-
 
   .banner-image {
     max-width: 100%;
@@ -114,13 +112,13 @@ $font-special: 'Plus Jakarta Sans', sans-serif;
 
     .menu a {
         padding: 10px 5px;
-            }
+        }
 
     ul {
-        
         gap: 10px;
-              }
-    }
+        }
+  }
+
 
 @media screen and (min-width: 940px){
     .header {
@@ -134,4 +132,4 @@ $font-special: 'Plus Jakarta Sans', sans-serif;
     .menu a {
         padding: 15px 10px;
          }
-        }
+  }
